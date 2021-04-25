@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ShowList from "../components/ShowList";
+import GitHubRepoList  from "../components/GitHubRepoList";
 import { AiOutlineSearch } from "react-icons/ai";
 import Alert from "../components/Alert";
 import "./IndexPage.css";
@@ -73,7 +73,7 @@ function IndexPage() {
         </form>
       </nav>
       {!error ? (
-        <ShowList
+        <GitHubRepoList
           list={reposList}
           isLoaded={loading}
           searchingStatus={searchingStatus}
