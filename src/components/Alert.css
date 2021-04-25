@@ -1,0 +1,36 @@
+
+.Alert {
+    width: 50%;
+    background-color: #fff7df;
+    color :#d9b652;
+    padding-left: 30px;
+    padding-right: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: grid ;
+    grid-template-columns: 10% auto;
+    grid-template-areas: "icon text";
+    border-radius: 50px;
+}
+.Alert_icon {
+    font-size: 30px;
+    grid-area: icon;
+    justify-self: center;
+    align-self: center;
+}
+.Alert_text {
+    grid-area: text;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .Alert {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
